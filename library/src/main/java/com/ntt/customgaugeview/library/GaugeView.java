@@ -225,7 +225,7 @@ public class GaugeView extends View {
 
         if (mShowText) {
             final int textValueId = a.getResourceId(R.styleable.GaugeView_textValue, 0);
-            final String textValue = a.getString(R.styleable.GaugeView_textValue);
+            final float textValue = a.getFloat(R.styleable.GaugeView_textValue);
             mTextValue = (0 < textValueId) ? context.getString(textValueId) : (null != textValue) ? textValue : "";
 
             final int textUnitId = a.getResourceId(R.styleable.GaugeView_textUnit, 0);
